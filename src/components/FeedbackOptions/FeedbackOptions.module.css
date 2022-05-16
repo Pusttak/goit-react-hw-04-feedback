@@ -1,0 +1,29 @@
+.button__list {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.button__list li:not(:last-child) {
+  margin-right: 25px;
+}
+
+.button {
+  display: block;
+  padding: 10px 30px;
+  font-size: 27px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  color: #535353;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.button:active {
+  background-color: rgb(12, 190, 45);
+  color: white;
+}
