@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Statistics from './Statistics';
 import FeedbackOptions from './FeedbackOptions';
 import Section from './Section';
+import css from './App.module.css';
 
 export const App = () => {
   const [good, setGood] = useState(0);
@@ -38,16 +39,7 @@ export const App = () => {
   const buttonsName = ['good', 'neutral', 'bad'];
 
   return (
-    <div
-      style={{
-        display: 'inline-flex',
-        flexDirection: 'column',
-        justifyContent: 'start',
-        marginTop: '150px',
-        alignItems: 'start',
-        color: '#010101',
-      }}
-    >
+    <div className={css.container}>
       <Section title={'Please leave feedback'}>
         <FeedbackOptions options={buttonsName} onLeaveFeedback={setRating} />
       </Section>
